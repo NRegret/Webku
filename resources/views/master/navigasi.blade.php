@@ -1,19 +1,23 @@
-<nav class="navbar navbar-light fixed-top navigation-clean"
-style="background-color: rgba(25,25,25,25);overflow: visible !important;padding-top: 0 !important;padding-bottom: 0 !important;">
-<div class="container">
-    <div class="collapse navbar-collapse text-light" id="navcol-1" style="font-size: 18px">
-  <ul class="nav navbar-nav ml-auto" al="">
-    <li class="nav-item" role="presentation">
-      <a class="nav-link text-light" href="/">Home</a>
-    </li>
-    <li class="nav-item" role="presentation">
-        <a class="nav-link text-light"
-        href="/about">About Us</a>
-    </li>
-    <li class="nav-item" role="presentation">
-          <a class="nav-link text-light" href="/form">Form</a>
-    </li>
-    </ul>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="img/logo.png"  width="30" height="30" class="d-inline-block align-top" alt=""> NICOtodiak</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/dasis">Data Siswa</a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-    </nav>
+</nav>

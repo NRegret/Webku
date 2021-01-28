@@ -1,33 +1,24 @@
 @include('master.master')
-<title>form</title>
+<title>Form</title>
+    <div class="container-fluid">
+        <form method="POST" action="/data">
+            @csrf
+            <div class="mb-3">
+                <label class="form-label">Nama</label>
+                <input type="text" class="form-control" name="nama" aria-describedby="nameHelp">
+                <div id="nameHelp" class="form-text">Isikan nama anda</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Alamat</label>
+                <input type="text" class="form-control" name="alamat" aria-describedby="alamatHelp">
+                <div id="alamatHelp" class="form-text">Isikan alamat anda</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Telepon</label>
+                <input type="text" class="form-control" name="telepon" aria-describedby="telpHelp">
+                <div id="telpHelp" class="form-text">Isikan nomor telepon anda</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 
-	<div id="form" class="section">
-		<div class="section-center">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-7 col-md-push-5">
-						<div class="form-cta">
-							<p>Isilah Form Berikut</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-md-pull-7">
-						<div class="form-form">
-                            <form method="POST" action="/data">
-                                @csrf
-								<div class="form-group">
-									<span class="form-label">Your Name</span>
-									<input class="form-control" name="nama" type="text" placeholder="Enter Your Name">
-								</div>
-								<div class="form-group">
-									<span class="form-label">alamat</span>
-									<input class="form-control" name="alamat" type="text" placeholder="Enter Your Email">
-								</div>
-								<div class="form-group">
-									<span class="form-label">telepon</span>
-									<input class="form-control" name="telepon" type="text" placeholder="Enter Your Phone Number">
-								</div>
-
-								<div class="form-btn">
-									<button class="submit-btn">Submit</button>
-								</div>
-							</form>
+    </div>
