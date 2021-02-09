@@ -10,6 +10,12 @@ class SiswaController extends Controller
 {
     public function store(Request $request)
     {
+        $validated = $request->validate([
+            'nama' => 'required',
+            'telepon' => 'required|numeric|digits_between:10,12',
+            'alamat' => 'required'
+        ]);
+
         $siswa = new Siswa();
         $siswa->nama = $request-> nama;
         $siswa->telepon = $request-> telepon;
